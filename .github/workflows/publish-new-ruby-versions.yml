@@ -22,7 +22,7 @@ jobs:
         RUBY_VERSION:  ${{ fromJSON(github.event.inputs.ruby_versions)}}
         IMAGE_VERSION:  ${{ fromJSON(github.event.inputs.image_versions)}}
 
-    runs-on: self-hosted,Linux
+    runs-on: self-hosted
     permissions:
       contents: read
       packages: write
